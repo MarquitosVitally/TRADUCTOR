@@ -1,0 +1,31 @@
+multilingual_media_translator/
+│
+├── src/
+│   ├── audio/
+│   │   ├── transcriber.py          # Convierte audio a texto (multilenguaje)
+│   │   ├── audio_utils.py          # Limpieza, normalización, fragmentación
+│   │
+│   ├── translation/
+│   │   ├── translator.py           # Traducción simultánea a múltiples idiomas
+│   │   ├── language_detection.py   # Identifica idioma de entrada
+│   │
+│   ├── subtitles/
+│   │   ├── subtitle_generator.py   # Genera subtítulos .srt / .vtt
+│   │   ├── subtitle_sync.py        # Sincroniza subtítulos con timestamps
+│   │
+│   ├── pipeline/
+│   │   ├── media_processor.py      # Orquestador: audio → texto → traducción → subtítulos
+│   │
+│   ├── utils/
+│   │   ├── file_handlers.py        # Manejo de archivos MP3, WAV, MP4, SRT, etc.
+│   │   ├── config.py               # Configuración global
+│   │
+│   ├── app.py                      # Interfaz principal (CLI o API Flask)
+│
+├── models/
+│   ├── whisper/                    # Modelos descargados de Whisper/OpenAI
+│   ├── mt/                         # Modelos de traducción (NLLB / M2M100)
+│
+├── requirements.txt                # Librerías necesarias
+├── README.md                       # Documentación del proyecto
+└── .env                            # Claves API (si usas modelos externos)
