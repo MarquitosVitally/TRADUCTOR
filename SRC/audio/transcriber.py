@@ -1,7 +1,7 @@
 # {} [ ] \
 import speech_recognition as sr
 
-filename = r"C:\Users\marqu\Documents\TRADUCTOR\SRC\audio\audio_utils.py"
+filename = "C:\Users\marqu\Documents\TRADUCTOR\SRC\audio\audio_utils.py"
 output_txt ="transcription.txt"
 
 r = sr.Recognizer()

@@ -29,3 +29,12 @@ multilingual_media_translator/
 ├── requirements.txt                # Librerías necesarias
 ├── README.md                       # Documentación del proyecto
 └── .env                            # Claves API (si usas modelos externos)
+
+
+| Tipo                  | Formato             | Descripción              |
+| --------------------- | ------------------- | ------------------------ |
+| **Audio sin pérdida** | WAV, AIFF, FLAC     | Calidad alta             |
+| **Audio comprimido**  | MP3, AAC, OGG, Opus | Más ligero               |
+| **Video contenedor**  | MP4, MKV, MOV       | Guarda video + audio     |
+| **Códec de video**    | H.264, H.265, AV1   | Forma en que se comprime |
+| **Códec de audio**    | AAC, MP3, Opus      | Comprime el audio        |
